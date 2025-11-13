@@ -1,0 +1,10 @@
+.spinner-container {
+  position: fixed;
+  background: var(--mat-sys-surface);
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}

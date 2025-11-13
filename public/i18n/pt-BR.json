@@ -1,0 +1,26 @@
+{
+  "HEADER_MSG": "Bem-vindo ao My Best Projects.",
+  "HEADER_MSG_2": "Explore alguns dos meus projetos do GitHub com estrelas que estão abaixo.",
+  "NotFound": {
+    "h2": "Página não encontrada",
+    "p": "A página que você está procurando não existe." 
+  },
+  "Links": {
+    "home": "Início",
+    "about": "Sobre"
+  },
+  "Home": {
+    "card": {
+      "LanguageUsed": "Linguagem usada",
+      "details": "Ver Detalhes"
+    },
+    "noProjects": "Nenhum projeto disponível."
+  },
+  "About": {
+    "title": "Sobre este site",
+    "intro": {
+      "p1": "Este site foi criado com o framework Angular e também com os componentes do Angular Material.",
+      "p2": "Este site é uma vitrine dos meus melhores projetos, obtidos dinamicamente consumindo dados da API do GitHub."
+    }
+  }
+}

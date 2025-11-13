@@ -1,0 +1,37 @@
+<app-loading />
+<div class="container">
+  <div class="responsive-grid">
+    @for (project of projects; track project.name) {
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>
+          {{ project.name }}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ project.description }}</p>
+        <p>
+          <small>
+            {{ 'Home.card.LanguageUsed' | translate}}: {{
+            project.language}}
+          </small>
+          <small class="stars">
+            <mat-icon fontSet="material-icons-round">star_border</mat-icon>
+            <span>{{project.stargazers_count}}</span>
+          </small>
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a matButton [href]="project.html_url" target="_blank">
+          {{ 'Home.card.details' | translate}}
+        </a>
+      </mat-card-actions>
+    </mat-card>
+    }
+  </div>
+  @if (projects.length === 0) {
+  <p class="no-projects">
+    {{ 'Home.noProjects' | translate}}
+  </p>
+  }
+</div>

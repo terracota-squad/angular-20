@@ -1,0 +1,26 @@
+{
+  "HEADER_MSG": "Welcome to My Best Projects.",
+  "HEADER_MSG_2": "Explore some of my starred GitHub projects below.",
+  "NotFound": {
+    "h2": "Page not found",
+    "p": "The page that you are looking for does not exist." 
+  },
+  "Links": {
+    "home": "Home",
+    "about": "About"
+  },
+  "Home": {
+    "card": {
+      "LanguageUsed": "Language used",
+      "details": "View Details"
+    },
+    "noProjects": "No projects available."
+  },
+  "About": {
+    "title": "About this website",
+    "intro": {
+      "p1": "This website was created using the Angular framework and also Angular Material components.",
+      "p2": "This website is a showcase of my best projects, dynamically obtained by consuming data from the GitHub API."
+    }
+  }
+}

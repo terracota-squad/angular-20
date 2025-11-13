@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <button matIconButton aria-label="icon-button with menu icon" (click)="handleClick()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button matIconButton [matMenuTriggerFor]="menu" aria-label="icon-button with language icon">
+    <mat-icon>language</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    @for (language of languages; track language.fullForm) {
+    <button mat-menu-item (click)="switchLanguage(language.shortForm)"
+      [style.background-color]="language.shortForm === currentLanguage ? '#7D7D7D4D' : null">
+      {{language.fullForm}}
+    </button>
+    }
+  </mat-menu>
+  
+</mat-toolbar>
